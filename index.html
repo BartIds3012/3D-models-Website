@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="Internals.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="0" exposure="0.72" shadow-softness="0" camera-orbit="765.3deg 71.06deg 25.54m" field-of-view="30deg">
+      <button class="Hotspot" slot="hotspot-1" data-position="4.5749998092651385m 0.8006720063105037m -2.2383427572661967m" data-normal="1m 0m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Arduino Nano</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="4.3177971839904785m 1.1974008749907417m -5.7149141915558666m" data-normal="1m 0m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">MPU6050 Gyroscope</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="4.30000019073486m 0.7923808548392792m -11.555566627920722m" data-normal="1m 0m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">USB-C power module</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="1.2294627578584425m 3.46505029068486m -6.016897454925116m" data-normal="0.2588171019044222m 0.9659263445702974m 0.00006802102022145411m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Vibrating actuator</div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="1.0791799369143398m -0.01499822422691155m -5.176288221607904m" data-normal="-0.9425916736355295m 0.049419985808066794m -0.33027049791905705m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Vibrating actuator</div>
+      </button><button class="Hotspot" slot="hotspot-6" data-position="1.2252674116233422m 1.4368461987268202m -1.0431513334962146m" data-normal="-0.38445388295705285m 0.06772480609283905m 0.9206565931545444m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">RGB-LED strip</div>
+      </button><button class="Hotspot" slot="hotspot-7" data-position="3.053199669889718m 0.3146199776930907m -11.119014804849312m" data-normal="0m 0.38270817479064667m -0.9238692834748927m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Prototype Board</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
+  </body>
+</html>
